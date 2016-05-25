@@ -1,0 +1,10 @@
+version: '2'
+services:
+    blogtest-elasticsearch:
+        container_name: blogtest-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/blogtest/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
